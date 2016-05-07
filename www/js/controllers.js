@@ -1,6 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope) {
+  $scope.openCordovaWebView = function()
+{
+ // Open cordova webview if the url is in the whitelist otherwise opens in app browser
+ window.open('http://rtcproj.ddns.net:8080/stream/webrtc','_blank');
+};
+})
 
 .controller('ChatsCtrl', function($scope, $interval, Pubnub) {
   Pubnub.init({
