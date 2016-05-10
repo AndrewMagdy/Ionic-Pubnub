@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','pubnub.angular.service'])
+angular.module('starter', ['ionic', 'starter.controllers', 'pubnub.angular.service'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -47,8 +47,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','p
       url: '/chats',
       views: {
         'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+          templateUrl: 'templates/tab-car.html',
+          controller: 'CarCtrl'
         }
       }
     })
