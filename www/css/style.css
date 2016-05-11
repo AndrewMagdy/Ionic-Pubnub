@@ -30,14 +30,14 @@
   background-size: cover;
 }
 .btn-group {
-  position: relative;
-  top:20%;
-  left:0%;
+  position: absolute;
+  bottom:180px;
+  right:250px;
 }
 .forward-btn {
   position: absolute;
-  bottom:120px;
-  right:150px;
+  top:0px;
+  left:150px;
 }
 
 .bottom-btn {

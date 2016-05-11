@@ -219,11 +219,8 @@ window.onbeforeunload = function() {
 return methods;
 })
 
-.controller('DashCtrl', function($scope,MyData) {
+.controller('DashCtrl', function($scope,MyData,Pubnub) {
   $scope.MyData = MyData;
-})
-
-.controller('CarCtrl', function($scope, $interval, Pubnub) {
   Pubnub.init({
     publish_key: 'pub-c-371bafb0-b1dc-4175-9bc0-6e68b7d512e2',
     subscribe_key: 'sub-c-a11f9ed6-dc88-11e5-8905-02ee2ddab7fe'
@@ -246,4 +243,8 @@ return methods;
       callback: function (m) {console.log(m);}
     });
   };
+})
+
+.controller('CarCtrl', function($scope, $interval, Pubnub) {
+
 })
