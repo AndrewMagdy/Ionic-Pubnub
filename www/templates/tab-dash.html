@@ -1,7 +1,12 @@
 <ion-view view-title="Stream">
   <ion-content class="padding">
-    <button class="button button-full button-assertive" ng-click="openCordovaWebView()">
-         Stream
-     </button>
+      <div id="container">
+        <div class="overlayWrapper">
+          <video id="remote-video" autoplay="" width="640" height="480">
+            Your browser does not support the video tag.
+          </video>
+          <p class="overlay">remote</p>
+        </div>
+      </div>
   </ion-content>
 </ion-view>

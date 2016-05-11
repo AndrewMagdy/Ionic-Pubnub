@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'pubnub.angular.service'])
+angular.module('starter', ['ionic', 'starter.controllers', 'pubnub.angular.service','angular-websocket'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
