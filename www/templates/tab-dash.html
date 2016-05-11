@@ -1,11 +1,26 @@
-<ion-view view-title="Stream">
-  <ion-content class="padding">
+<ion-view>
+  <ion-content>
       <div id="container">
         <div class="overlayWrapper">
-          <video id="remote-video" autoplay="" width="640" height="480">
+          <video class ="vid" id="remote-video" autoplay="">
             Your browser does not support the video tag.
           </video>
-          <p class="overlay">remote</p>
+        </div>
+        <div class="btn-group">
+          <div>
+            <button class="button button-positive ion-arrow-up-a forward-btn " on-hold="moveTo('forward')" on-release = "stop()">
+            </button>
+          </div>
+          <div>
+            <button class="button button-positive right-btn ion-arrow-right-a" on-hold="moveTo('turn_right')" on-release = "stop()">
+            </button>
+            <button class="button button-positive left-btn ion-arrow-left-a" on-hold="moveTo('turn_left')" on-release = "stop()">
+            </button>
+          </div>
+          <div>
+            <button class="button button-positive bottom-btn ion-arrow-down-a" on-hold="moveTo('reverse')" on-release = "stop()">
+            </button>
+          </div>
         </div>
       </div>
   </ion-content>
