@@ -1,8 +1,7 @@
 angular.module('starter.controllers', [])
 .factory('MyData', function($websocket) {
   // Open a WebSocket connection
-  var dataStream = $websocket('ws:' + '//' + '192.168.1.103:8080' + '/stream/webrtc');
-
+  var dataStream = $websocket('ws://rtcproj.ddns.net:8080/stream/webrtc');
   var collection = [];
 
 
@@ -15,8 +14,7 @@ angular.module('starter.controllers', [])
   };
 
 
-  var signalling_server_hostname = location.hostname || "192.168.43.181";
-  var signalling_server_address = signalling_server_hostname + ':' + (location.port || 8080);
+  var signalling_server_hostname = location.hostname || "http://rtcproj.ddns.net";
 
   var pc;
   var audio_video_stream;
