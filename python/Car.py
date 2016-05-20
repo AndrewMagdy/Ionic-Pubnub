@@ -29,11 +29,11 @@ H2_IN1 = 5
 H2_IN2 = 6
 H2_IN3 = 12
 H2_IN4 = 16
-    
+
 def init():
     GPIO.setmode (GPIO.BCM)
     GPIO.setwarnings(False)
-    
+
     # Enable GPIO pins SETUP (H-Bridge 1)
     GPIO.setup(H1_enable_a,GPIO.OUT)
     GPIO.setup(H1_enable_b,GPIO.OUT)
@@ -199,10 +199,10 @@ def pivot_left(tf):
 ##    elif key_press.lower() == 'e':
 ##        pivot_right(sleep_time)
 ##    elif key_press.lower() == 'q':
-##        pivot_left(sleep_time)    
+##        pivot_left(sleep_time)
 ##    else:
 ##        GPIO.cleanup()
-##        
+##
 ##command = tk.Tk()
 ##command.bind('<KeyPress>', key_input)
 ##command.mainloop()

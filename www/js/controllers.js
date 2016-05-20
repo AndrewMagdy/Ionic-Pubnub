@@ -14,12 +14,13 @@ angular.module('starter.controllers', [])
   };
 
 
-  var signalling_server_hostname = location.hostname || "http://rtcproj.ddns.net";
+  var signalling_server_hostname = "http://rtcproj.ddns.net";
+  console.log(signalling_server_hostname + " host");
 
   var pc;
   var audio_video_stream;
   var pcConfig = {"iceServers": [
-    {"urls": ["stun:stun.l.google.com:19302", "stun:" + signalling_server_hostname + ":3478"]}
+    {"urls": ["stun:stun.l.google.com:19302"]}
   ]};
   var pcOptions = {
     optional: [
